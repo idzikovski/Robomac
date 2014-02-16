@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/pozadina_igra_faded"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="130dp"
+     >
+     
+    <!--  <TextView
+        android:id="@+id/levelComplete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />-->
+        
+        <FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+	android:id="@+id/container"/>
+    
+    <TextView
+        android:id="@+id/yourTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/container"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/nextLevel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/yourTime"
+        android:layout_alignTop="@+id/homeButton"
+        android:onClick="nextLevelClicked"
+        android:src="@drawable/next_level" />
+
+    <ImageButton
+        android:id="@+id/replayLevel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:onClick="replayLevelClicked"
+        android:layout_below="@+id/yourTime"
+        android:layout_alignTop="@+id/homeButton"
+		android:layout_centerHorizontal="true"
+        android:src="@drawable/replay_level" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:onClick="homeButtonClicked"
+        android:layout_below="@+id/yourTime"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/home_button" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ivan.dzikovski.psevi.robomac"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/rm_launcher"
+        android:name="ivan.dzikovski.psevi.robomac.Robomac"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar"
+        
+        >
+        <!-- android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" --> 
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:name="ivan.dzikovski.psevi.robomac.MainActivity"
+            android:label="@string/app_name" >
+          
+        </activity>
+        <activity
+            android:name="ivan.dzikovski.psevi.robomac.GameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            android:name="ivan.dzikovski.psevi.robomac.LevelCompleteActivity"
+            
+            android:label="@string/app_name" >   
+            
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:name="ivan.dzikovski.psevi.robomac.ChallengeCompletedActivity"
+            android:label="@string/app_name" >     
+            
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:name="ivan.dzikovski.psevi.robomac.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+          
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:name="ivan.dzikovski.psevi.robomac.HelpActivity"
+            android:label="@string/app_name" >
+           
+        </activity>
+        
+    </application>
+
+</manifest>

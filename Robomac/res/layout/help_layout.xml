@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadina_igra_faded"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp" >
+
+    <ImageView
+        android:id="@+id/helpImage"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help" />
+
+    <FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_below="@id/helpImage"
+	android:id="@+id/container"/>
+ <!-- 
+    <TextView
+        android:id="@+id/help_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_below="@id/helpImage"
+        android:text="@string/help_text"/>
+-->
+</RelativeLayout>

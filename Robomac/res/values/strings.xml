@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Robomac</string>
+    <string name="action_settings">Settings</string>
+    <string name="congrat">Congratulations</string>
+	<string name="congrat_text">You have successfully completed the Robomac challenge</string>
+	<string name="level_complete">Level complete</string>
+	<string name="help_text">Help our little robot reach his home.
+	     Navigate through the maze by tilting the device in the appropriete direction, collect all of the coins
+	      and bring the robot to his home. Enjoy!</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/pozadina_igra_faded"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp" >
+
+    <!--  <TextView
+        android:id="@+id/congrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="@string/congrat" />
+        
+    <ivan.dzikovski.psevi.robomac.AutoResizeTextView
+        android:id="@+id/congrat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/congrat" />
+        />
+-->
+	<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="85dp"
+	android:id="@+id/container"/>
+    <TextView
+        android:id="@+id/congratText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container"
+        android:layout_centerHorizontal="true"
+        android:text="@string/congrat_text" />
+
+    <TextView
+        android:id="@+id/totalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/congratText"
+        android:layout_alignLeft="@+id/congratText"
+        android:layout_marginTop="80dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/shareButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:onClick="shareButtonClicked"
+        android:layout_alignBottom="@id/totalTime"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@id/container"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/share" />
+
+</RelativeLayout>
